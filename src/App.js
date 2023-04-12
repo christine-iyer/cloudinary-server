@@ -1,5 +1,5 @@
 import './App.css';
-import ImageUpload from "./components/ImageUpload";
+import ImageUpload from "./Input.component/Input.jsx";
 
 
 function App() {
