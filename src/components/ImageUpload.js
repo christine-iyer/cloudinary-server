@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CustomInput from "./components/Input.js";
+import CustomInput from "./Input.js";
 import Axios from "axios";
 const ImageUpload = () => {
   const [fileData, setFileData] = useState();
