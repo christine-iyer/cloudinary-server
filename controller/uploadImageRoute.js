@@ -1,4 +1,4 @@
-const ImageSchema = require("../models/fileUpload");
+const ImageSchema = require("../model/uploadImageRoute");
 module.exports.UploadImage = async (req, res) => {
   const imageUploaded = new ImageSchema({
     image: req.file.path,
