@@ -19,7 +19,7 @@ const ImageUpload = () => {
 
     formdata.append("image", fileData);
 
-    await Axios.post("http://localhost:5000/api/image", formdata)
+    await Axios.post("http://localhost:5001/api/image", formdata)
       .then((res) => console.log("res", res.data))
       .catch((error) => console.error(error));
   };
