@@ -1,9 +1,11 @@
+require('dotenv').config()
 const express = require("express");
+const path = require('path')
 const mongoose = require("mongoose"); // new
 const cors = require("cors");
 const ImageUploadRouter = require("./route/uploadImageRoute");
-require('dotenv').config()
-const path = require('path')
+
+
 // const favicon = require('serve-favicon')
 
 
@@ -21,7 +23,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'js')))
+app.use(express.static(path.join(__dirname, 'build')))
 //adding the middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
